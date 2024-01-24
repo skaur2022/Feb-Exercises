@@ -1,6 +1,6 @@
 /*  JavaScript 7th Edition
-    Chapter 7
-    Hands-on Project 7-4
+    Chapter 6
+    Hands-on Project 6-4
 
     Filename: styles.css
 */
@@ -60,7 +60,14 @@ header {
    font-size: 48px;
    text-align: center;
    line-height: 1.5em;
-   margin-bottom: 0;
+}
+
+/* main content */
+article {
+   width: 960px;
+   text-align: left;
+   background: #FFDB70;
+   position: relative;
 }
 
 
@@ -68,76 +75,41 @@ header {
 /*-------------------- Project Styles ------------------*/
 
 article {
-   background-color: #FFDB70;
-   margin-top: 0;
-   padding-bottom: 30px;
+   padding: 20px 50px 60px;
+}
+article h1 {
+   font-size: 1.7em;
+   margin-bottom: 20px;
 }
 
-article > h1 {
-   font-size: 2em;
-   text-align: center;
-   margin: 0;
-   padding: 20px 0;
-   width: 100%;
-}
-
-section {
+form {
    display: flex;
    flex-flow: row nowrap;
+   justify-content: space-around;
+   align-items: center;
+   width: 90%;
 }
 
-div#customerInput {
-   flex: 1 1 100px;
+fieldset {
+   margin: 20px;
 }
 
-div#customerBox {
-   flex: 1 1 200px;
-   padding: 10px 30px 10px 10px;
+fieldset legend {
+   margin-bottom: 10px;
 }
 
-label {
-   font-size: 1.1em;
-   display: inline-block;
-   margin-left: 15px;
-   margin-bottom: 20px;
-   margin-top: 10px;
-   margin-right: 5px;
+fieldset select {
+   min-width: 150px;
 }
 
-input#customerName {
-   width: 300px;
-   font-size: 1em;
-   
+input[type="button"] {
+   display: block;
+   height: 50px;
+   width: 175px;
 }
 
-input#addButton, input#searchButton, input#removeButton {
-   width: 90px;
-   height: 30px; 
-}
-
-input#addButton {
-   margin-left: 110px;
-}
-
-div#customerBox h1 {
-   font-size: 1.2em;
-   margin: 0 0 15px 0;
-}
-
-p#status {
-   margin-top: 30px;
-   margin-left: 20px;
-   margin-bottom: 20px;
-   color: red;
-}
-
-ol {
-   display: list-item;
-   list-style-type:decimal;
-   padding-left: 60px;
-   line-height: 2;
-   height: 200px;
-   overflow: auto;
-   background-color: rgb(220, 220, 220);
-   box-shadow: 0px 0px 10px blue;
+p#vehicle {
+   text-align: center;
+   border-top: 1px solid rgb(125, 125, 125);
+   padding-top: 10px;
 }
